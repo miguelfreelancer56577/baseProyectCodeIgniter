@@ -1,6 +1,20 @@
 
 nombre: <input type="text" name="minombre" />
 fecha: <input type="text" name="fecha" id="fecha" class="fecha"/>
+
+<h3>Click to show a simple image gallery</h3>
+<p>
+    <a class="fancybox" href="<?php echo base_url("recursos/images/gallery/1.jpg");?>" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="<?php echo base_url("recursos/images/gallery/1.jpg");?>" alt="" class="imgFancybox" /></a>
+    <a class="fancybox" href="<?php echo base_url("recursos/images/gallery/2.jpg");?>" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="<?php echo base_url("recursos/images/gallery/2.jpg");?>" alt="" class="imgFancybox" /></a>
+    <a class="fancybox" href="<?php echo base_url("recursos/images/gallery/3.jpg");?>" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="<?php echo base_url("recursos/images/gallery/3.jpg");?>" alt="" class="imgFancybox"/></a>
+</p>
+<script type="text/javascript">
+    $('.fancybox').fancybox().find("img").css({
+        "width": "10%"
+    });
+</script>
+
+
 <script type="text/javascript">
     $(".fecha").datepicker();
 </script>

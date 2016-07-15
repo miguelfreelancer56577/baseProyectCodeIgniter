@@ -155,7 +155,26 @@ class Main_Controller extends CI_Controller{
             'ui-nestable-list'
         ));
         
+//        load fancybox2
+        $this->loadFancybox2();
         
+    }
+    
+    public function loadFancybox2() {
+//        load fancybox2.1.5
+        $this->cssjs->add_css(array(
+            base_url('recursos/script/lib/fancybox2.1.5/jquery.fancybox'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.fancybox-buttons'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.fancybox-thumbs')
+        ), false);
+        $this->cssjs->add_js(array(
+            base_url('recursos/script/lib/fancybox2.1.5/jquery.fancybox.pack'),
+            base_url('recursos/script/lib/fancybox2.1.5/jquery.fancybox'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.mousewheel-3.0.6.pack'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.fancybox-buttons'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.fancybox-thumbs'),
+            base_url('recursos/script/lib/fancybox2.1.5/helpers/jquery.fancybox-media')
+        ), false);
     }
     
     public function loadAngular() {
