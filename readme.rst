@@ -1,4 +1,15 @@
 ###################
+Installation
+###################
+
+1.- You can clone this proyect in you root of server
+2.- execute database.sql file
+3.- change your connection into database.php file
+4.- credentials
+user: admin@admin.com
+password: Passw0rd01
+
+###################
 What is CodeIgniter
 ###################
 
