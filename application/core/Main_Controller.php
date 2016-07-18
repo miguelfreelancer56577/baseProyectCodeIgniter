@@ -157,7 +157,14 @@ class Main_Controller extends CI_Controller{
         
 //        load fancybox2
         $this->loadFancybox2();
+        $this->loadValidate();
         
+    }
+    
+    public function loadValidate() {
+        $this->cssjs->add_js(array(
+            base_url('recursos/script/lib/jquery-validation-1.15.0/jquery.validate.min')
+        ), false);
     }
     
     public function loadFancybox2() {
