@@ -2,10 +2,10 @@
 Installation
 ###################
 
-1.- You can clone this proyect in you root of server
-2.- execute database.sql file
-3.- change your connection into database.php file
-4.- credentials
+- You can clone this proyect in you root of server
+- execute database.sql file
+- change your connection into database.php file
+- credentials
 user: admin@admin.com
 password: Passw0rd01
 
